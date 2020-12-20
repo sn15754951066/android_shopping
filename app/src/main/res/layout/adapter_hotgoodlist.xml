@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liner"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_200"
+    android:layout_margin="@dimen/dp_10"
+    android:gravity="center"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/image_hotgoodList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:padding="@dimen/dp_20"
+        android:background="#E7EAE7"
+        android:src="@mipmap/ic_menu_me_nor"></ImageView>
+
+    <TextView
+        android:id="@+id/tv_name_hotgoodList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        android:maxLines="1"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_floor_price_hotgoodList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sssss"
+        android:textColor="#DC2413"
+        android:textSize="@dimen/sp_10" />
+
+
+</LinearLayout>

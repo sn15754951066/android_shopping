@@ -28,6 +28,7 @@ public abstract class BaseAdapter<D> extends RecyclerView.Adapter {
     public BaseAdapter(Context context, List<D> data){
         this.context = context;
         mData = data;
+        
     }
 
     @NonNull

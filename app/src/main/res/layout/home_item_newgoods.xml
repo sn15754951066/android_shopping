@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/liner"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_200"
+    android:layout_margin="@dimen/dp_10"
     android:gravity="center"
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="@dimen/dp_200"
-    android:layout_height="@dimen/dp_200">
+    android:orientation="vertical">
+
     <ImageView
-        android:layout_width="@dimen/dp_100"
+        android:id="@+id/new_pic_url"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/dp_100"
-        android:src="@mipmap/ic_menu_me_nor"
-        android:id="@+id/new_pic_url">
-    </ImageView>
+        android:padding="@dimen/dp_20"
+        android:background="#E7EAE7"
+        android:src="@mipmap/ic_menu_me_nor"></ImageView>
+
     <TextView
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sssss"
         android:layout_margin="@dimen/dp_8"
-        android:textSize="@dimen/sp_12"
-        android:id="@+id/name"/>
+        android:maxLines="1"
+        android:textSize="@dimen/sp_12" />
+
     <TextView
+        android:id="@+id/floor_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="sssss"
-        android:textSize="@dimen/sp_10"
-        android:id="@+id/floor_price"/>
+        android:textColor="#DC2413"
+        android:textSize="@dimen/sp_10" />
 
 
 </LinearLayout>

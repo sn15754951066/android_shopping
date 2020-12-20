@@ -1,4 +1,4 @@
-package com.example.myhttp.utils.viewpager;
+package com.example.android_shopping.ui.homeAdapter;
 
 import android.content.Context;
 import android.util.AttributeSet;

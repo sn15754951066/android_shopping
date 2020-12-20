@@ -1,13 +1,14 @@
-package com.example.shopping_android_app.adapter;
+package com.example.android_shopping.ui.homeAdapter;
 
 import android.content.Context;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.example.shopping_android_app.R;
-import com.example.shopping_android_app.base.BaseAdapter;
-import com.example.shopping_android_app.model.home.HomeBean;
+import com.example.android_shopping.R;
+import com.example.android_shopping.base.BaseAdapter;
+import com.example.android_shopping.module.data.HomeBean;
+
 
 import java.util.List;
 

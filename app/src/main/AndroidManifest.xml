@@ -2,13 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android_shopping">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
+        android:name=".app.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.purchasedetails.PurchaseDetailsActivity"></activity>
+        <activity android:name=".ui.hot.HotActivity" />
+        <activity android:name=".ui.brand.BrandListActivity" />
+        <activity android:name=".ui.brand.BrandActivity" />
+        <activity android:name=".ui.channel.ChannelActivity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">

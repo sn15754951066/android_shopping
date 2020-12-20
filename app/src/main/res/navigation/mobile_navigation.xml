@@ -8,18 +8,27 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.android_shopping.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:label="HomeFragment"/>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.android_shopping.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_me"
+        android:name="com.example.android_shopping.ui.me.MeFragment"
+        android:label="MeFragment"
+        tools:layout="@layout/navigation_me" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.android_shopping.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_sort"
+        android:name="com.example.android_shopping.ui.sort.SortFragment"
+        android:label="SortFragment"
+        tools:layout="@layout/navigation_sort" />
+    <fragment
+        android:id="@+id/navigation_shop"
+        android:name="com.example.android_shopping.ui.shop.ShoppingFragment"
+        android:label="ShoppingFragment"
+        tools:layout="@layout/navigation_shopping" />
+    <fragment
+        android:id="@+id/navigation_topic"
+        android:name="com.example.android_shopping.ui.topic.TopicFragment"
+        android:label="TopicFragment"
+        tools:layout="@layout/navigation_topic" />
 </navigation>

@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_240"
+    android:padding="@dimen/dp_18"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_goods_image"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/iv_goods_image"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="日式和风懒人沙发"
+        android:textSize="@dimen/dp_14"
+        android:gravity="center"
+        android:id="@+id/tv_goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/tv_goods_name"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="￥599"
+        android:textColor="#E82424"
+        android:gravity="center"
+        android:id="@+id/tv_goods_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
