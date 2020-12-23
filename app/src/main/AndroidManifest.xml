@@ -18,6 +18,9 @@
         <activity android:name=".ui.brand.BrandListActivity" />
         <activity android:name=".ui.brand.BrandActivity" />
         <activity android:name=".ui.channel.ChannelActivity" />
+        <activity android:name=".module.home.login.LoginActivity"/>
+        <activity android:name=".module.home.login.RegsiterActivity"/>
+        <activity android:name=".ui.purchasedetails.bigImage.BigImageActivity"/>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">

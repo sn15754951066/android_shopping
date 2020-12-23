@@ -18,11 +18,11 @@ public interface ITab {
     }
 
     interface Presenter extends IBasePresenter<View> {
-        void getTab(String url);
+        void getTab(int id);
     }
 
 
     interface Model extends IBaseModel {
-        void getTab(String url,Callback callback);
+        void getTab(int id,Callback callback);
     }
 }

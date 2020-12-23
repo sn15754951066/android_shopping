@@ -19,9 +19,9 @@ public class TabPresenter extends BasePresenter<ITab.View> implements ITab.Prese
 
 
     @Override
-    public void getTab(String url) {
+    public void getTab(int id) {
         if(view!=null){
-            this.model.getTab( url, new Callback() {
+            this.model.getTab( id, new Callback() {
                 @Override
                 public void success(Object data) {
                     view.getTabReturn( (TabBean) data );

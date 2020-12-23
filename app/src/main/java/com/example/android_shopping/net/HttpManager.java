@@ -3,6 +3,7 @@ package com.example.android_shopping.net;
 import android.util.Log;
 
 import com.example.android_shopping.api.ServiceApi;
+import com.example.android_shopping.utils.SpUtils;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -73,6 +74,7 @@ public class HttpManager {
         public Response intercept(Chain chain) throws IOException {
             Request request = chain.request().newBuilder()
                     .addHeader("Authorization","APPCODE 964e16aa1ae944e9828e87b8b9fbd30a")
+                    .addHeader( "X-Nideshop-Token", SpUtils.getInstance().getString("token") )
                     .build();
             return chain.proceed(request);
         }

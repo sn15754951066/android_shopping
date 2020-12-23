@@ -15,8 +15,10 @@
         android:layout_height="wrap_content"
         app:tabMode="scrollable" />
 
-    <com.example.android_shopping.ui.homeAdapter.CustomViewPager
+    <com.example.android_shopping.ui.homeAdapter.CanSlidingViewpager
         android:id="@+id/vp_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+
 </LinearLayout>

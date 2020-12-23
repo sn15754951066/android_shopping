@@ -105,4 +105,10 @@ dependencies {
 
     //oss
     implementation 'com.aliyun.dpa:oss-android-sdk:+'
+
+    //垂直的tablayout
+    implementation 'q.rorbin:VerticalTabLayout:1.2.5'
+
+    //tab动画
+    implementation 'com.github.Andy671:Dachshund-Tab-Layout:v0.3.1'
 }

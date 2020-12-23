@@ -8,11 +8,7 @@ import com.example.android_shopping.interfaces.home.IHome;
 import com.example.android_shopping.module.data.HomeBean;
 import com.example.android_shopping.presenter.home.HomePresenter;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ShoppingFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class ShoppingFragment extends BaseFragment<HomePresenter> implements IHome.View {
 
 

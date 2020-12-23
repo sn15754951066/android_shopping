@@ -151,7 +151,7 @@ public class HomeFragment extends BaseFragment<HomePresenter> implements IHome.V
                     //跳转详情页面
                     List<HomeBean.DataBean.CategoryListBean.GoodsListBean> goodsListBeans = (List<HomeBean.DataBean.CategoryListBean.GoodsListBean>) view.getTag();
                     Intent intent = new Intent( getActivity(), PurchaseDetailsActivity.class );
-                    intent.putExtra( "categoryId",goodsListBeans.get( pos ).getId());
+                    intent.putExtra( "categoryId", goodsListBeans.get( pos ).getId() );
                     startActivity( intent );
                 }
             } );
@@ -211,9 +211,11 @@ public class HomeFragment extends BaseFragment<HomePresenter> implements IHome.V
                     int i1 = url.indexOf( "=" );
                     String substring = url.substring( i1 + 1 );
 
+                    Integer isubstring = Integer.valueOf( substring );
+
                     Intent intent = new Intent( getActivity(), ChannelActivity.class );
-                    intent.putExtra( "substring", substring );
-                    intent.putExtra( "name", channelBeans.get( finalI ).getName() );
+                    intent.putExtra( "isubstring", isubstring );
+                    intent.putExtra( "tabName", channelBeans.get( finalI ).getName() );
                     startActivity( intent );
 
                 }

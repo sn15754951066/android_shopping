@@ -14,9 +14,9 @@ public class TabModel extends BaseModel implements ITab.Model {
     private ServiceApi service;
 
     @Override
-    public void getTab(String url,Callback callback) {
+    public void getTab(int id,Callback callback) {
         service = HttpManager.getInstance().getService();
-        CommonSubscriber<TabBean> commonSubscriber = service.getTab(url).compose( RxUtils.rxScheduler() )
+        CommonSubscriber<TabBean> commonSubscriber = service.getTab(id).compose( RxUtils.rxScheduler() )
                 .subscribeWith( new CommonSubscriber<TabBean>( callback ) {
                     @Override
                     public void onNext(TabBean tabBean) {
